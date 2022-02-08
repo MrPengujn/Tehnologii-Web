@@ -1,0 +1,43 @@
+body {
+    background-color: #F2DCC2;
+}
+
+.menu {
+
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    border-radius: 15px;
+    background-color: #F2DFCE;
+    padding: 15px 10px;
+
+    font-family: 'Aldrich', sans-serif;
+
+    margin:auto;
+    width: fit-content;
+}
+
+.ctg_map {
+    margin:auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: fit-content;
+}
+
+.menu a {
+    color: black;
+    text-align: center;
+    padding: 0px 40px;
+
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.hLine {
+    border-style: dotted none none;
+    border-width: 10px;
+    width: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: white;
+}
