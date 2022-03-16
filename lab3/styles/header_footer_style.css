@@ -13,16 +13,19 @@
 }
 
 .header_bg {
-  position: inherit;
-  background-color: red;
-  height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, .8), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05));
+  height: 7vh;
+  width: 100vw;
 }
 
 .header {
   border-style: solid;
   border-width: 0px;
   border-color: #f59d05;
-  background-color: black;
+
   padding: 15px 10px;
 
   font-family: "Aldrich", sans-serif;
