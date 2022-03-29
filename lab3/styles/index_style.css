@@ -270,4 +270,9 @@ p {
   left: 25px;
   position: fixed;
   z-index: 1;
+  border-radius: 20px;
+}
+
+#back_to_top:hover {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.2));
 }
