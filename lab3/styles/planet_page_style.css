@@ -75,32 +75,91 @@ li {
 }
 
 .planet_title {
+  font-family: "Syne Mono", monospace;
   grid-area: ttl;
 }
 
-.planet_img {
-  grid-area: plimg;
+.planet_infobox {
+  grid-area: box;
+}
+
+.planet_div_separator {
+  height: fit-content;
+  width: 100%;
+  grid-area: gsep;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 1), rgba(0, 0, 0, 0));
+}
+
+.planet_div_separator img{
+  width: 40%;
+}
+
+.planet_infobox table {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.5));
+  border: 2px solid gray;
+  border-radius: 5px;
+}
+
+.planet_infobox th, td {
+  font-size: 13px;
+  width: 110px;
+  min-width: 110px;
+  text-align: start;
+}
+
+.planet_infobox caption {
+  font-size: 20px;
+  color: white;
+}
+
+.planet_separator {
+  grid-area: sep;
+  border-top: 5px dotted white;
+}
+
+.planet_top{
+  grid-area: tinf;
+}
+
+.planet_bottom{
+  grid-area: binf;
 }
 
 .planet_info {
-  font-size: 10px;
-  writing-mode: vertical-lr;
-  grid-area: plinf;
+  margin: 5px 50px;
+}
+
+.planet_info p{
+  margin-top: 7px;
+  text-indent: 5%;
+  text-align: start;
+  font-size: 15px;
+  word-wrap: break-word;
+}
+
+.planet_info h3 {
+  color: darksalmon;
+  font-size: 17px;
+  text-align: start;
+  text-indent: 3%;
 }
 
 .grid {
   display: grid;
-  margin-top: 50px;
+  margin: 50px 10px 0 10px;
+  
+  grid-template-columns: fit-content(100px) 1fr;
   grid-template-areas:
     'ttl ttl ttl'
-    'plimg plinf plinf';
+    'sep sep sep'
+    'box tinf tinf'
+    'gsep gsep gsep'
+    'binf binf binf';
   gap: 10px;
-  background-color: #2196F3;
   padding: 10px;
 }
 
 .grid > div {
-  background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
   padding: 10px 0;
   font-size: 30px;
@@ -117,4 +176,25 @@ li {
 
 #back_to_top:hover {
   background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.2));
+}
+
+#pln_fullimg {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8));
+  text-align: center;
+
+  user-select: none;
+}
+
+#pln_fullimg h1{
+  position: fixed;
+  right: 10vw;
+  top: 10vh;
+}
+
+#pln_fullimg h1:hover{
+  color: #f49c52;
 }
