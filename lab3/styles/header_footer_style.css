@@ -112,4 +112,10 @@ footer {
   bottom: 0;
   width: 100%;
   text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.temp {
+  align-self: flex-end;
 }

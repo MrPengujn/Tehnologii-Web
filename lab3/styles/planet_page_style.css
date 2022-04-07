@@ -144,6 +144,14 @@ li {
   text-indent: 3%;
 }
 
+.planet_infobox img {
+  cursor: pointer;
+}
+
+.planet_clickable_image {
+  cursor: pointer;
+}
+
 .grid {
   display: grid;
   margin: 50px 10px 0 10px;
@@ -193,6 +201,7 @@ li {
   position: fixed;
   right: 10vw;
   top: 10vh;
+  cursor: pointer;
 }
 
 #pln_fullimg h1:hover{

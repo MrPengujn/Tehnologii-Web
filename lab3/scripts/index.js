@@ -1,9 +1,6 @@
-let fullimage
-
 window.onscroll = function() { scroll() };
 window.onload = function() {
-    fullimage = document.getElementById("pln_fullimg");
-    display_image();    
+    display_image('pln_fullimg');    
 };
 
 function scroll(){
@@ -20,10 +17,18 @@ function scroll_to_top(){
     document.documentElement.scrollTop = 0;
 }
 
-function display_image(){
-    if(fullimage.style.display == "none"){
-        fullimage.style.display = "block";
-        return;
+function display_image(objectId){
+
+    let obj = document.getElementById(objectId);
+    if(obj){
+        if(obj.style.display == "none"){
+            obj.style.display = "block";
+            return;
+        }
+        obj.style.display = "none";
     }
-    fullimage.style.display = "none";
+}
+
+function open_search_menu(){
+    
 }
