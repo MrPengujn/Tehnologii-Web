@@ -1,20 +1,101 @@
 {
     "mercury":{
-        "diameter": "4480km",
-        "radius": "2439.7 +- 1.0km",
-        "mass": "3.3011 * 10<sup>23</sup> kg",
-        "volume": "6.083 * 10<sup>10</sup> km",
-        "surface_gravity": "3.7 m/s<sup>2</sup>",
-        "orbital_period": "87.9691 d",
-        "orbital speed:": "47,36 km/s"
+        "info":{
+            "diameter": "4480",
+            "radius": "2439.7 +- 1.0",
+            "mass": "3.3011 * 10<sup>23</sup>",
+            "volume": "6.083 * 10<sup>10</sup>",
+            "surface_gravity": "3.7",
+            "orbital_period": "87.9691",
+            "orbital_speed": "47.36"
+        }
     },
-    "mercury":{
-        "diameter": "12,104 km",
-        "radius": "6,051.8 +- 1.0km",
-        "mass": "4.8675 * 10<sup>24</sup> kg",
-        "volume": "9.2843 * 10<sup>11</sup> km<sup>3</sup>",
-        "surface_gravity": "8.87 m/s<sup>2</sup>",
-        "orbital_period": "224.701 d",
-        "orbital speed:": "35.02 km/s"
+    "venus":{
+        "info":{
+            "diameter": "12104",
+            "radius": "6051.8 +- 1.0",
+            "mass": "4.8675 * 10<sup>24</sup>",
+            "volume": "9.2843 * 10<sup>11</sup>",
+            "surface_gravity": "8.87",
+            "orbital_period": "224.701",
+            "orbital_speed": "35.02"
+        }
+    },
+    "earth":{
+        "info":{
+            "diameter": "12742",
+            "radius": "6371",
+            "mass": "5.972 * 10<sup>24</sup>",
+            "volume": "1.083 * 10<sup>12</sup>",
+            "surface_gravity": "9.806",
+            "orbital_period": "365",
+            "orbital_speed": "29.78"
+        }
+    },
+    "mars":{
+        "info":{
+            "diameter": "6779",
+            "radius": "3389.5 +- 0.2",
+            "mass": "6.4171 * 10<sup>23</sup>",
+            "volume": "1.631 * 10<sup>11</sup>",
+            "surface_gravity": "3.720",
+            "orbital_period": "686.980",
+            "orbital_speed": "24.007"
+        }
+    },
+    "jupiter":{
+        "info":{
+            "diameter": "139820",
+            "radius": "69911",
+            "mass": "1.8981 * 10<sup>27</sup>",
+            "volume": "1.431 * 10<sup>50</sup>",
+            "surface_gravity": "24.79",
+            "orbital_period": "12",
+            "orbital_speed": "13.07"
+        }
+    },
+    "saturn":{
+        "info":{
+            "diameter": "116460",
+            "radius": "60268",
+            "mass": "5.6834 * 10<sup>26</sup>",
+            "volume": "8.2713 * 10<sup>14</sup>",
+            "surface_gravity": "10.44",
+            "orbital_period": "10751.84",
+            "orbital_speed": "9.68"
+        }
+    },
+    "uranus":{
+        "info":{
+            "diameter": "50724",
+            "radius": "25,362 +- 7",
+            "mass": "8.681 * 10<sup>25</sup>",
+            "volume": "6.833 * 10<sup>13</sup>",
+            "surface_gravity": "8.69",
+            "orbital_period": "30667.4825",
+            "orbital_speed": "6.80"
+        }
+    },
+    "neptune":{
+        "info":{
+            "diameter": "49244",
+            "radius": "24,622 +- 19",
+            "mass": "1.024 * 10<sup>26</sup>",
+            "volume": "6.253 * 10<sup>13</sup> ",
+            "surface_gravity": "11.15",
+            "orbital_period": "60152",
+            "orbital_speed": "5.43"
+        }
+    },
+    "pluto":{
+        "info":{
+            "diameter": "2376.6",
+            "radius": "1188.3",
+            "mass": "1.309 * 10<sup>22</sup>",
+            "volume": "7.057 * 10<sup>9</sup>",
+            "surface_gravity": "0.620",
+            "orbital_period": "90498.1",
+            "orbital_speed": "4.743"
+        }
     }
 }

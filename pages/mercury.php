@@ -10,40 +10,11 @@
 </head>
 
 <body class="index_background">
-
   <header class="header_bg">
-    <nav class="header">
-      <a href="../index.html" id="header_home">Home</a>
-
-      <div id="header_large_menu">
-        <a href="../pages/mercury.html">Mercury</a>
-        <a href="../pages/venus.html">Venus</a>
-        <a href="../pages/earth.html">Earth</a>
-        <a href="../pages/mars.html">Mars</a>
-        <a href="../pages/jupiter.html">Jupiter</a>
-        <a href="../pages/saturn.html">Saturn</a>
-        <a href="../pages/uranus.html">Uranus</a>
-        <a href="../pages/neptune.html">Neptune</a>
-        <a href="../pages/pluto.html">Pluto</a>
-      </div>
-
-      <div id="header_small_menu">
-
-        <img src="../media/general/menu.png" width="30px">
-
-        <div id="dropdown">
-          <a href="../pages/mercury.html">Mercury</a>
-          <a href="../pages/venus.html">Venus</a>
-          <a href="../pages/earth.html">Earth</a>
-          <a href="../pages/mars.html">Mars</a>
-          <a href="../pages/jupiter.html">Jupiter</a>
-          <a href="../pages/saturn.html">Saturn</a>
-          <a href="../pages/uranus.html">Uranus</a>
-          <a href="../pages/neptune.html">Neptune</a>
-          <a href="../pages/pluto.html">Pluto</a>
-        </div>
-      </div>
-    </nav>
+    <?php
+    require('components/navbar.php');
+    require('components/search_menu.php');
+    ?>
   </header>
 
   <main>
@@ -61,6 +32,10 @@
       <div class="planet_separator"></div>
       <div class="planet_infobox">
         <table>
+          <?php
+          $planetData = file_get_contents("../data/planet_data.json");
+          $array = json_decode($planetData)->mercury;
+          ?>
           <tbody>
             <caption>Mercury</caption>
             <tr>
@@ -71,43 +46,64 @@
             <tr>
               <th>Diameter:</th>
               <td>
-                4480km
+                <?php
+                echo $array->info->diameter;
+                ?>
+                km
               </td>
             </tr>
             <tr>
               <th>Radius:</th>
               <td>
-                2439.7 +- 1.0km
+                <?php
+                echo $array->info->radius;
+                ?>
+                km
               </td>
             </tr>
             <tr>
               <th>Mass:</th>
               <td>
-                3.3011 * 10<sup>23</sup> kg
+                <?php
+                echo $array->info->mass;
+                ?>
+                kg
               </td>
             </tr>
             <tr>
               <th>Volume:</th>
               <td>
-                6.083 * 10<sup>10</sup> km
+                <?php
+                echo $array->info->volume;
+                ?>
+                km<sup>3</sup>
               </td>
             </tr>
             <tr>
               <th>Surface gravity:</th>
               <td>
-                3.7 m/s<sup>2</sup>
+                <?php
+                  echo $array->info->surface_gravity;
+                ?>
+                m/s<sup>2</sup>
               </td>
             </tr>
             <tr>
               <th>Orbital period:</th>
               <td>
-                87.9691 d
+                <?php
+                  echo $array->info->orbital_period;
+                ?>
+                d
               </td>
             </tr>
             <tr>
               <th>Orbital speed:</th>
               <td>
-                47.36 km/s
+                <?php
+                  echo $array->info->orbital_speed;
+                ?>
+                km/s
               </td>
             </tr>
           </tbody>
