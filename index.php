@@ -215,7 +215,6 @@
 
   <footer class="footer">
     <p>Realizat de Gheorghița Valentin, IA-213</p>
-    <p class="temp">compare</p>
   </footer>
 
   <script src="./scripts/index.js"></script>

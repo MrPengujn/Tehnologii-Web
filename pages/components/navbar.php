@@ -15,6 +15,17 @@
 
   <img src="../media/general/search.png" id="header_search" onclick="open_search_menu('search_menu')">
 
+  <div id="user_menu">
+
+    <div id="dropup">
+      <a href="../pages/authR.php">Sign up</a>
+      <a href="../pages/mercury.php">Help</a>
+    </div>
+
+    <img src="../media/general/default_profile.png" width="45px">
+
+  </div>
+
   <div id="header_small_menu">
 
     <img src="./media/general/menu.png" width="30px">
