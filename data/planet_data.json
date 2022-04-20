@@ -1,0 +1,20 @@
+{
+    "mercury":{
+        "diameter": "4480km",
+        "radius": "2439.7 +- 1.0km",
+        "mass": "3.3011 * 10<sup>23</sup> kg",
+        "volume": "6.083 * 10<sup>10</sup> km",
+        "surface_gravity": "3.7 m/s<sup>2</sup>",
+        "orbital_period": "87.9691 d",
+        "orbital speed:": "47,36 km/s"
+    },
+    "mercury":{
+        "diameter": "12,104 km",
+        "radius": "6,051.8 +- 1.0km",
+        "mass": "4.8675 * 10<sup>24</sup> kg",
+        "volume": "9.2843 * 10<sup>11</sup> km<sup>3</sup>",
+        "surface_gravity": "8.87 m/s<sup>2</sup>",
+        "orbital_period": "224.701 d",
+        "orbital speed:": "35.02 km/s"
+    }
+}
