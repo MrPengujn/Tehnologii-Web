@@ -19,7 +19,7 @@
 
     <div id="dropup">
       <a href="../pages/authR.php">Sign up</a>
-      <a href="../pages/mercury.php">Help</a>
+      <a href="../pages/help.php">Help</a>
     </div>
 
     <img src="../media/general/default_profile.png" width="45px">

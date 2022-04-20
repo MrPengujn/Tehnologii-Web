@@ -13,23 +13,24 @@ if (count($_POST)){
     foreach($userArray as $value){
 
         if($value->uname == $uname){
-            $_SESSION['query_result'] = 'Username already exists!';
             $_SESSION['errors'] = true;
+            $_SESSION['query_result'] = 'Username already exists!';
             header("Location: ../pages/authR.php");
             break;
         }
     }
 
     if($mpassword != $confpassword){
+        $_SESSION['errors'] = true;
         $_SESSION['query_result'] = 'Passwords don\'t mach!';
         header("Location: ../pages/authR.php");
-        $_SESSION['errors'] = true;
     }
 
     $userArray[] = ['uname' => $uname, 'pass' => $mpassword];
     $userList = json_encode($userArray);
     file_put_contents('../data/users.json', $userList);
     $_SESSION['errors'] = false;
-    header("Location: ../index.php");
+    echo "<script>alert('Signed in successfully, log in now');
+    document.location='../pages/auth.php';</script>";
 }
 ?>

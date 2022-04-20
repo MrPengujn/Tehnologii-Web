@@ -4,8 +4,8 @@
 <head>
   <title>The solar system</title>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="./styles/index_style.css">
-  <link rel="stylesheet" href="./styles/header_footer_style.css">
+  <link rel="stylesheet" href="../styles/index_style.css">
+  <link rel="stylesheet" href="../styles/header_footer_style.css">
   <link href="https://fonts.googleapis.com/css2?family=Aldrich&amp;family=Montserrat:wght@300&amp" rel="stylesheet">
 </head>
 
@@ -217,7 +217,7 @@
     <p>Realizat de Gheorghița Valentin, IA-213</p>
   </footer>
 
-  <script src="./scripts/index.js"></script>
+  <script src="../scripts/index.js"></script>
 </body>
 
 </html>

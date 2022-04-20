@@ -12,9 +12,9 @@ if (count($_POST)){
     foreach($userArray as $value){
 
         if($value->uname == $uname && $value->pass == $mpassword){
-            echo "Logged in!";
             $_SESSION['errors'] = false;
-            header("Location: ../index.php");
+            echo "<script>alert('Logged in successfully, welcome back $uname');
+            document.location='../index.php';</script>";
             break;
         }
     }
