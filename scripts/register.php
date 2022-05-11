@@ -23,8 +23,7 @@ if (count($_POST)){
         $userArray[] = ['uname' => $uname, 'pass' => $mpassword];
         $userList = json_encode($userArray);
         file_put_contents('../data/users.json', $userList);
-        echo "<script>alert('Signed up successfully, log in now');
-        document.location='../pages/auth.php';</script>";
+        echo "<script>alert('Signed up successfully, log in now');document.location='../pages/auth.php';</script>";
     }
 }
 ?>
