@@ -13,8 +13,7 @@
 <body class="index_background">
   <header class="header_bg">
     <?php
-    require('components/navbar.php');
-    require('components/search_menu.php');
+      require('components/navbar.php');
     ?>
   </header>
 

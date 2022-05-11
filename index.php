@@ -4,22 +4,66 @@
 <head>
   <title>The solar system</title>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="../styles/index_style.css">
-  <link rel="stylesheet" href="../styles/header_footer_style.css">
+  <link rel="stylesheet" href="./styles/index_style.css">
+  <link rel="stylesheet" href="./styles/header_footer_style.css">
   <link href="https://fonts.googleapis.com/css2?family=Aldrich&amp;family=Montserrat:wght@300&amp" rel="stylesheet">
 </head>
 
 <body class="index_background">
   <header class="header_bg">
 
-    <?php
-    require('pages/components/navbar.php');
-    require('pages/components/search_menu.php');
-    ?>
+    <nav class="header">
+      <a href="./index.php" id="header_home">Home</a>
 
+      <div id="header_large_menu">
+        <a href="./pages/mercury.php">Mercury</a>
+        <a href="./pages/venus.php">Venus</a>
+        <a href="./pages/earth.php">Earth</a>
+        <a href="./pages/mars.php">Mars</a>
+        <a href="./pages/jupiter.php">Jupiter</a>
+        <a href="./pages/saturn.php">Saturn</a>
+        <a href="./pages/uranus.php">Uranus</a>
+        <a href="./pages/neptune.php">Neptune</a>
+        <a href="./pages/pluto.php">Pluto</a>
+      </div>
+
+      <a href="./pages/search.php">
+        <img src="./media/general/search.png" id="header_search">
+      </a>
+      <div id="user_menu">
+
+      <div id="dropup">
+        <a href="pages/authR.php" id="lgin">Sign up</a>
+        <p onclick="log_out()" id="lgout">Log out</p>
+        <a href="pages/help.php">Help</a>
+        <script src="scripts/session_check.js"></script>
+      </div>
+
+        <img src="./media/general/default_profile.png" width="45px">
+
+      </div>
+
+      <div id="header_small_menu">
+
+        <img src="./media/general/menu.png" width="30px">
+
+        <div id="dropdown">
+          <a href="./pages/mercury.php">Mercury</a>
+          <a href="./pages/venus.php">Venus</a>
+          <a href="./pages/earth.php">Earth</a>
+          <a href="./pages/mars.php">Mars</a>
+          <a href="./pages/jupiter.php">Jupiter</a>
+          <a href="./pages/saturn.php">Saturn</a>
+          <a href="./pages/uranus.php">Uranus</a>
+          <a href="./pages/neptune.php">Neptune</a>
+          <a href="./pages/pluto.php">Pluto</a>
+        </div>
+      </div>
+    </nav>
   </header>
 
   <main>
+
     <a id="PAGE_TOP"></a>
 
     <div class="index_top_container">
@@ -48,9 +92,13 @@
       </p>
     </div>
 
-    <div class="index_mercury">
+    <div class="planet-carousel">
 
-      <img src="./media/planets/mercury.png" alt="Sun png" width="50%" class="index_align_center">
+    </div>
+
+    <div class="index_mercury carousel-element index_planet">
+
+      <img src="./media/planets/mercury.png" alt="Sun png" width="50%" class="index_align_center planet-carousel">
 
       <div class="index_inner_div">
         <p class="index_align_center">
@@ -67,7 +115,7 @@
 
     </div>
 
-    <div class="index_venus">
+    <div class="index_venus carousel-element index_planet">
 
       <img src="./media/planets/venus.png" alt="Sun png" width="50%" class="index_align_center">
 
@@ -84,7 +132,7 @@
       </div>
     </div>
 
-    <div class="index_earth">
+    <div class="index_earth carousel-element index_planet">
 
       <img src="./media/planets/earth.png" alt="Sun png" width="40%" class="index_align_center">
 
@@ -101,7 +149,7 @@
       </div>
     </div>
 
-    <div class="index_mars">
+    <div class="index_mars carousel-element index_planet">
 
       <img src="./media/planets/mars.png" alt="Sun png" width="30%" class="index_align_center">
 
@@ -119,7 +167,7 @@
       </div>
     </div>
 
-    <div class="index_jupiter">
+    <div class="index_jupiter carousel-element index_planet">
 
       <img src="./media/planets/jupiter.png" alt="Sun png" width="60%" class="index_align_center">
 
@@ -137,7 +185,7 @@
       </div>
     </div>
 
-    <div class="index_saturn">
+    <div class="index_saturn carousel-element index_planet">
 
       <img src="./media/planets/saturn.png" alt="Sun png" width="60%" class="index_align_center">
 
@@ -154,7 +202,7 @@
       </div>
     </div>
 
-    <div class="index_uranus">
+    <div class="index_uranus carousel-element index_planet">
 
       <img src="./media/planets/uranus.png" alt="Sun png" width="50%" class="index_align_center">
 
@@ -173,7 +221,7 @@
       </div>
     </div>
 
-    <div class="index_neptune">
+    <div class="index_neptune carousel-element index_planet">
 
       <img src="./media/planets/neptune.png" alt="Sun png" width="40%" class="index_align_center">
 
@@ -192,7 +240,7 @@
       </div>
     </div>
 
-    <div class="index_pluto">
+    <div class="index_pluto carousel-element index_planet">
 
       <img src="./media/planets/pluto.webp" alt="Sun png" width="40%" class="index_align_center">
 
@@ -217,7 +265,8 @@
     <p>Realizat de Gheorghița Valentin, IA-213</p>
   </footer>
 
-  <script src="../scripts/index.js"></script>
+  <script src="./scripts/planet_carousel.js"></script>
+  <script src="./scripts/index.js"></script>
 </body>
 
 </html>

@@ -1,5 +1,5 @@
 <?php session_start();
-$_SESSION['errors'] = true;
+$_SESSION['errors'] = false;
 
 if (count($_POST)){
 
@@ -8,10 +8,9 @@ if (count($_POST)){
 
     $uname = isset($_POST['uname']) ? $_POST['uname'] : '';
     $mpassword = isset($_POST['password']) ? $_POST['password'] : '';
-    $confpassword = isset($_POST['confPassword']) ? $_POST['confPassword'] : '';
 
     foreach($userArray as $value){
-
+        
         if($value->uname == $uname){
             $_SESSION['errors'] = true;
             $_SESSION['query_result'] = 'Username already exists!';
@@ -19,18 +18,13 @@ if (count($_POST)){
             break;
         }
     }
-
-    if($mpassword != $confpassword){
-        $_SESSION['errors'] = true;
-        $_SESSION['query_result'] = 'Passwords don\'t mach!';
-        header("Location: ../pages/authR.php");
+    
+    if($_SESSION['errors'] == false){
+        $userArray[] = ['uname' => $uname, 'pass' => $mpassword];
+        $userList = json_encode($userArray);
+        file_put_contents('../data/users.json', $userList);
+        echo "<script>alert('Signed up successfully, log in now');
+        document.location='../pages/auth.php';</script>";
     }
-
-    $userArray[] = ['uname' => $uname, 'pass' => $mpassword];
-    $userList = json_encode($userArray);
-    file_put_contents('../data/users.json', $userList);
-    $_SESSION['errors'] = false;
-    echo "<script>alert('Signed in successfully, log in now');
-    document.location='../pages/auth.php';</script>";
 }
 ?>

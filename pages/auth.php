@@ -14,14 +14,13 @@
   <header class="header_bg">
     <?php
     require('components/navbar.php');
-    require('components/search_menu.php');
     ?>
   </header>
 
   <main>
     <div class="auth">
 
-      <form action="../scripts/login.php" method="post" class="log_in">
+      <form action="../scripts/login.php" method="post" class="log_in" id="lgin_form">
         <h1>Log in</h1>  
 
         <p style='color: red'>
@@ -55,6 +54,7 @@
   </main>
 
   <script src="../scripts/index.js"></script>
+  <script src="../scripts/validation.js"></script>
 </body>
 
 </html>

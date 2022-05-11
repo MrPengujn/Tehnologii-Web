@@ -1,7 +1,7 @@
 window.onscroll = function() { scroll() };
 window.onload = function() {
     display_image('pln_fullimg'); 
-    open_search_menu('search_menu');   
+    planetCarousel(1);
 };
 
 function scroll(){
@@ -24,18 +24,6 @@ function display_image(objectId){
     if(obj){
         if(obj.style.display == "none"){
             obj.style.display = "block";
-            return;
-        }
-        obj.style.display = "none";
-    }
-}
-
-function open_search_menu(menuID){
-
-    let obj = document.getElementById(menuID);
-    if(obj){
-        if(obj.style.display == "none"){
-            obj.style.display = "flex";
             return;
         }
         obj.style.display = "none";

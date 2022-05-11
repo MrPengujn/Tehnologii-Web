@@ -7,7 +7,8 @@
             "volume": "6.083 * 10<sup>10</sup>",
             "surface_gravity": "3.7",
             "orbital_period": "87.9691",
-            "orbital_speed": "47.36"
+            "orbital_speed": "47.36",
+            "link": "localhost/pages/mercury.php"
         }
     },
     "venus":{
@@ -18,7 +19,8 @@
             "volume": "9.2843 * 10<sup>11</sup>",
             "surface_gravity": "8.87",
             "orbital_period": "224.701",
-            "orbital_speed": "35.02"
+            "orbital_speed": "35.02",
+            "link": "localhost/pages/venus.php"
         }
     },
     "earth":{
@@ -29,7 +31,8 @@
             "volume": "1.083 * 10<sup>12</sup>",
             "surface_gravity": "9.806",
             "orbital_period": "365",
-            "orbital_speed": "29.78"
+            "orbital_speed": "29.78",
+            "link": "localhost/pages/earth.php"
         }
     },
     "mars":{
@@ -40,7 +43,8 @@
             "volume": "1.631 * 10<sup>11</sup>",
             "surface_gravity": "3.720",
             "orbital_period": "686.980",
-            "orbital_speed": "24.007"
+            "orbital_speed": "24.007",
+            "link": "localhost/pages/mars.php"
         }
     },
     "jupiter":{
@@ -51,7 +55,8 @@
             "volume": "1.431 * 10<sup>50</sup>",
             "surface_gravity": "24.79",
             "orbital_period": "12",
-            "orbital_speed": "13.07"
+            "orbital_speed": "13.07",
+            "link": "localhost/pages/jupiter.php"
         }
     },
     "saturn":{
@@ -62,7 +67,8 @@
             "volume": "8.2713 * 10<sup>14</sup>",
             "surface_gravity": "10.44",
             "orbital_period": "10751.84",
-            "orbital_speed": "9.68"
+            "orbital_speed": "9.68",
+            "link": "localhost/pages/saturn.php"
         }
     },
     "uranus":{
@@ -73,7 +79,8 @@
             "volume": "6.833 * 10<sup>13</sup>",
             "surface_gravity": "8.69",
             "orbital_period": "30667.4825",
-            "orbital_speed": "6.80"
+            "orbital_speed": "6.80",
+            "link": "localhost/pages/uranus.php"
         }
     },
     "neptune":{
@@ -84,7 +91,8 @@
             "volume": "6.253 * 10<sup>13</sup> ",
             "surface_gravity": "11.15",
             "orbital_period": "60152",
-            "orbital_speed": "5.43"
+            "orbital_speed": "5.43",
+            "link": "localhost/pages/neptune.php"
         }
     },
     "pluto":{
@@ -95,7 +103,8 @@
             "volume": "7.057 * 10<sup>9</sup>",
             "surface_gravity": "0.620",
             "orbital_period": "90498.1",
-            "orbital_speed": "4.743"
+            "orbital_speed": "4.743",
+            "link": "localhost/pages/pluto.php"
         }
     }
 }

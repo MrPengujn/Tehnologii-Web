@@ -13,13 +13,17 @@
     <a href="../pages/pluto.php">Pluto</a>
   </div>
 
-  <img src="../media/general/search.png" id="header_search" onclick="open_search_menu('search_menu')">
+  <a href="../pages/search.php">
+    <img src="../media/general/search.png" id="header_search">
+  </a>
 
   <div id="user_menu">
 
     <div id="dropup">
-      <a href="../pages/authR.php">Sign up</a>
+      <a href="../pages/authR.php" id="lgin">Sign up</a>
+      <p onclick="log_out()" id="lgout">Log out</p>
       <a href="../pages/help.php">Help</a>
+      <script src="../scripts/session_check.js"></script>
     </div>
 
     <img src="../media/general/default_profile.png" width="45px">
@@ -28,7 +32,7 @@
 
   <div id="header_small_menu">
 
-    <img src="./media/general/menu.png" width="30px">
+    <img src="../media/general/menu.png" width="30px">
 
     <div id="dropdown">
       <a href="../pages/mercury.php">Mercury</a>

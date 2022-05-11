@@ -28,11 +28,11 @@ if($_POST) {
     .'From: ' . $email . "\r\n";
       
     if(mail($recipient, $emailSubject, $emailMessage, $headers)) {
-        echo "<script>alert('Thank you for contacting us, $email. You will get a reply within 24 hours.');</script>";
-        header("Location: ../pages/auth.php");
+        echo "<script>alert('Thank you for contacting us, $email. You will get a reply within 24 hours.');
+        document.location='../index.php';</script>";
     } else {
-        echo "<script>alert('We are sorry but the email did not go through.');</script>";
-        header("Location: ../pages/auth.php");
+        echo "<script>alert('We are sorry but the email did not go through.');
+        document.location='../index.php';</script>";
     }
       
 }

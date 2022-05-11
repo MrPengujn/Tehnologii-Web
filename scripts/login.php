@@ -14,7 +14,9 @@ if (count($_POST)){
         if($value->uname == $uname && $value->pass == $mpassword){
             $_SESSION['errors'] = false;
             echo "<script>alert('Logged in successfully, welcome back $uname');
-            document.location='../index.php';</script>";
+            document.location='../index.php';
+            localStorage.setItem('uname','$uname');
+            localStorage.setItem('loggedin','true');</script>";
             break;
         }
     }

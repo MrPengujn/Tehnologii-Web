@@ -13,15 +13,14 @@
 <body class="index_background">
   <header class="header_bg">
     <?php
-    require('components/navbar.php');
-    require('components/search_menu.php');
+      require('components/navbar.php');
     ?>
   </header>
 
   <main>
     <div class="auth">
 
-      <form action="../scripts/register.php" method="post" class="sign_up">
+      <form action="../scripts/register.php" method="post" class="sign_up" id="reg_form">
         <h1>Sign up</h1>  
 
         <p style='color: red'>
@@ -35,16 +34,19 @@
 
         <div class="elem">
           <label>Username</label>
+          <p id="uname_error" style="color:red"></p>
           <input type="text" name="uname" placeholder="User Name">
         </div>
 
         <div class="elem">
           <label>Password</label>
+          <p id="pass1_error" style="color:red"></p>
           <input type="password" name="password" placeholder="Password">
         </div>
 
         <div class="elem">
           <label>Confirm password</label>
+          <p id="pass2_error" style="color:red"></p>
           <input type="password" name="confPassword" placeholder="Password">
         </div>
 
@@ -61,6 +63,7 @@
   </main>
 
   <script src="../scripts/index.js"></script>
+  <script src="../scripts/validation.js"></script>
 </body>
 
 </html>

@@ -50,6 +50,7 @@
 #user_menu img{
   border-radius: 20px;
   margin: 0px 15px;
+  z-index: 1;
 }
 
 #user_menu:hover #dropup{
@@ -63,12 +64,18 @@
   background-color: rgb(65, 65, 65);
   opacity: 90%;
   border-radius: 5px;
-  padding-top: 5px;
+  padding-top: 15px;
 }
 
-#dropup a{
+#dropup a, p{
   font-size: 10;
   padding: 0px 5px;
+  cursor: pointer;
+  max-width: fit-content;
+}
+
+#dropup p:hover{
+  color: rgb(244, 156, 82);
 }
 
 #header_search{
