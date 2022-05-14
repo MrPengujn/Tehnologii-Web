@@ -23,14 +23,7 @@
       <form action="../scripts/register.php" method="post" class="sign_up" id="reg_form">
         <h1>Sign up</h1>  
 
-        <p style='color: red'>
-          <?php session_start();
-            if(isset($_SESSION['query_result']) && $_SESSION['errors'] == true){
-              echo $_SESSION['query_result'];
-              unset($_SESSION['query_result']);
-            }
-          ?>
-        </p>
+        <p style='color: red' id="errorPr"></p>
 
         <div class="elem">
           <label>Username</label>
@@ -62,6 +55,7 @@
 
   </main>
 
+  <script src="../scripts/jquery.js"></script>
   <script src="../scripts/index.js"></script>
   <script src="../scripts/validation.js"></script>
 </body>

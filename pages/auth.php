@@ -23,14 +23,7 @@
       <form action="../scripts/login.php" method="post" class="log_in" id="lgin_form">
         <h1>Log in</h1>  
 
-        <p style='color: red'>
-          <?php session_start();
-            if(isset($_SESSION['errors']) && $_SESSION['errors']){
-              echo "Wrong username or password!";
-              $_SESSION['errors'] = false;
-            }
-          ?>
-        </p>
+        <p style='color: red' id="errorPr"></p>
 
         <div class="elem">
           <label>Username</label>
@@ -43,7 +36,7 @@
         </div>
 
         <div class="elem">
-          <button type="submit">Log in</button>
+          <button type="submit" id="sub_btn">Log in</button>
         </div>
 
       </form>
@@ -53,6 +46,7 @@
     </div>
   </main>
 
+  <script src="../scripts/jquery.js"></script>
   <script src="../scripts/index.js"></script>
   <script src="../scripts/validation.js"></script>
 </body>

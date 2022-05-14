@@ -8,7 +8,38 @@ if(loginForm){
         e.preventDefault();
 
         if(validate_login()){
-            loginForm.submit();
+
+            const uname = loginForm.elements['uname'].value;
+            const password = loginForm.elements['password'].value;
+            const btn = document.querySelector('button');
+
+            $.ajax({
+                type: "POST",
+                url: "../scripts/login.php",
+                data: {
+                    "uname": uname,
+                    "password": password
+                },
+                dataType: "html",
+                beforeSend: function() {    
+                    btn.disabled = true;
+                    console.log("Processing...");
+                },                
+                success: function(data){
+                    
+                    if(data == true){
+
+                        document.getElementById('errorPr').innerHTML = "Wrong username or password!";
+                    }else{
+
+                        alert('Logged in successfully, welcome back ' + uname);
+                        document.location = '../index.php';
+                        localStorage.setItem('uname', uname);
+                        localStorage.setItem('loggedin', 'true');
+                    }
+                    btn.disabled = false;
+                }
+            });
         }
     });
 }
@@ -18,7 +49,36 @@ if(regForm){
         e.preventDefault();
 
         if(validate_register()){
-            regForm.submit();
+
+            const uname = regForm.elements['uname'].value;
+            const password = regForm.elements['password'].value;
+            const btn = document.querySelector('button');
+
+            $.ajax({
+                type: "POST",
+                url: "../scripts/register.php",
+                data: {
+                    "uname": uname,
+                    "password": password
+                },
+                dataType: "html",
+                beforeSend: function() {    
+                    btn.disabled = true;
+                    console.log("Processing...");
+                },                
+                success: function(data){
+                    
+                    if(data == true){
+
+                        document.getElementById('errorPr').innerHTML = "Username already exists!";
+                    }else{
+
+                        alert('Signed up successfully, log in now');
+                        document.location='../pages/auth.php';
+                    }
+                    btn.disabled = false;
+                }
+            });
         }
     });
 }
